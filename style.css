@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght=400;600;700&display=swap');
+
+html, body, [data-testid="stAppViewContainer"], p, label, th, td {
+    font-family: 'Cairo', sans-serif !important; 
+    direction: rtl !important; 
+    text-align: center !important;
+}
+
+h1, h2, h3, h4, h5, h6, .stTitle, .stSubheader, [data-testid="stHeader"] h1, [data-testid="stSubheader"] h2, div.stMarkdown h1, div.stMarkdown h2, div.stMarkdown h3 {
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: block !important;
+    width: 100% !important;
+    margin: 15px auto !important;
+}
+
+.main .block-container {
+    max-width: 750px !important;
+    margin: 0 auto !important;
+}
+
+div[data-baseweb="select"] * {
+    justify-content: center !important;
+    text-align: center !important;
+    direction: rtl !important;
+}
+
+[data-baseweb="popover"] li, [role="listbox"] li {
+    justify-content: center !important;
+    text-align: center !important;
+    display: flex !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+input {
+    direction: ltr !important;
+    text-align: center !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+div[data-testid="stWidgetLabel"] p {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.stButton>button {
+    background-color: #2E7D32 !important; 
+    color: white !important; 
+    border-radius: 10px !important;
+    border: none !important; 
+    padding: 12px 24px !important; 
+    font-weight: bold !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important; 
+    align-items: center !important;    
+    text-align: center !important;
+    margin: 20px auto !important;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.25) !important;
+    transition: all 0.3s ease !important;
+}
+
+.stButton>button:hover { 
+    background-color: #1B5E20 !important; 
+    transform: translateY(-2px) !important;
+}
+
+[data-testid="stMetricValue"], [data-testid="stMetricLabel"], [data-testid="stMetricDelta"] { 
+    text-align: center !important;
+    justify-content: center !important;
+    display: flex !important;
+    width: 100% !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #2E7D32 !important; 
+    font-weight: 700 !important; 
+    direction: ltr !important;
+}
+
+#MainMenu, footer, header {visibility: hidden;}
+
+.js-plotly-plot, .plotly, [data-testid="stPlotlyChart"] {
+    direction: ltr !important;
+    text-align: left !important;
+}
+.js-plotly-plot .main-svg, .plotly .main-svg {
+    direction: ltr !important;
+}
