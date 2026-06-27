@@ -1,4 +1,19 @@
 import streamlit as st
+
+# كود إخفاء علامات وقوائم Streamlit الافتراضية
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            .stDeployButton {display:none;}
+            /* إخفاء الأزرار العائمة في الهاتف */
+            [data-testid="stToolbar"] {visibility: hidden;}
+            .viewerBadge_container__1QSob {display: none;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 import pandas as pd
 import os
 
