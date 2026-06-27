@@ -1,14 +1,14 @@
 import streamlit as st
 
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            ._viewerBadge_1qs0b_1 {display: none;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+# كود إخفاء كل علامات Streamlit
+st.markdown("""
+    <style>
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stDeployButton {display:none;}
+    #MainMenu {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
 
 import pandas as pd
 import os
